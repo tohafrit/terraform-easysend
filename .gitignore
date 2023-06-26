@@ -1,0 +1,37 @@
+# Исключение файлов, созданных Terraform
+.terraform/
+
+# Исключение файлов состояния Terraform
+*.tfstate
+*.tfstate.backup
+*.tfstate.migrate-state
+*.tfstate.snapshot
+
+# Игнорирование логов
+*.log
+
+# Игнорирование временных файлов
+*.tfvars
+*.tfplan
+terraform.rc
+terraform.tfvars
+.terraform.lock.hcl
+.terraform.lock*
+
+# Исключение файла для переопределений переменных окружения
+override.tf
+
+# Исключение файла с переменными автоматического восстановления
+override.tf.json
+
+# Исключение файлов учетных записей
+*.pem
+*.key
+*.pub
+
+# Игнорирование файлов проекта и IDE
+*.tfproject
+.idea/
+
+/private-key
+
